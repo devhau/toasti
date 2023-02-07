@@ -1,24 +1,19 @@
 {
   "compilerOptions": {
-    "typeRoots": ["./node_modules/@types"],
-    "outDir": "./dist/",
-    "noImplicitAny": true,
-    "declaration": true,
-    "declarationDir": "./dist",
-    "esModuleInterop": true,
-    "sourceMap": true,
-    "module": "ESNext",
-    "target": "ES5",
-    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
     "moduleResolution": "node",
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"]
-    }
+    "esModuleInterop": true,
+    "noUnusedLocals": true,
+    "noImplicitAny": true,
+    "declarationDir": "dist/types",
+    "declaration": true,
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true
   },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": ["node_modules"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
 }
-

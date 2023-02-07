@@ -1,0 +1,7 @@
+# .npmignore
+node_modules
+tests
+src
+_includes
+CNAME
+ads.txt
