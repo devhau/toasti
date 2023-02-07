@@ -2,6 +2,19 @@
   padding: 0;
   position: fixed;
 }
+.toasti-manager .toasti-top {
+  top: 0;
+  width: 100%;
+  position: fixed;
+  height: 0;
+}
+.toasti-manager .toasti-bottom {
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  height: 0;
+}
 .toasti-manager .toasti-position {
   position: fixed;
   z-index: 999999;
@@ -12,24 +25,29 @@
 .toasti-manager .toasti-position.toasti-left-top {
   left: 2px;
   top: 2px;
-  height: 50px;
 }
 .toasti-manager .toasti-position.toasti-right-top {
   right: 2px;
   top: 2px;
-  height: 50px;
+}
+.toasti-manager .toasti-position.toasti-center-top {
+  position: relative;
+  margin: auto;
+  top: 2px;
 }
 .toasti-manager .toasti-position.toasti-left-bottom {
   left: 2px;
   bottom: 2px;
-  height: 50px;
   display: flex;
   flex-direction: column-reverse;
+}
+.toasti-manager .toasti-position.toasti-center-bottom {
+  position: relative;
+  margin: auto;
 }
 .toasti-manager .toasti-position.toasti-right-bottom {
   right: 2px;
   bottom: 2px;
-  height: 50px;
   display: flex;
   flex-direction: column-reverse;
 }
